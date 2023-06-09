@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #1b1923;
-    --secondary-color: #1e1e28;
-    --tertiary-color: #6e6c7e;
+    --primary-color: #232634;
+    --secondary-color: #303446;
+    --tertiary-color: #737994;
 }
 
 body {
@@ -10,6 +10,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100vw;
+    height: 100vh;
 }
 
 h1 {
@@ -90,4 +92,44 @@ h1 {
     font-family: monospace;
     font-size: 20px;
     font-weight: 700;
+}
+
+@media screen and (min-width: 450px) {
+    body {
+        min-height: 100vh;
+    }
+    h1 {
+        font-size: 80px;
+    }
+    .content {
+        width: 80%;
+        padding: 90px 0;
+        margin-top: 200px;
+    }
+    #color-display {
+        font-size: 120px;
+    }
+    .color-option {
+        width: 200px;
+        height: 200px;
+    }
+    #result {
+        font-size: 100px;
+        margin: 100px;
+        
+    }
+    #reset-button {
+        margin-top: 100px;
+        padding: 60px 200px;
+        border-radius: 30px;
+        font-size: 60px;
+        font-weight: 800;
+    }
+    .credits p {
+        font-size: 50px;
+    }
+    .credits i {
+        font-size: 60px;
+        margin: 0 10px;
+    }
 }
